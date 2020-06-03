@@ -12,6 +12,8 @@ Believe it or not, you have the capabilities of building every feature in this g
 
 If you get stuck during this project or would like to see an experienced developer work through it, click “Get Help“ to see a project walkthrough video.
 
+![Beach door](https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg)
+![Space door](https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg)
 ![ChoreBot](https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/robot.svg)
 
 [Codepen link](https://codepen.io/acunil/full/JjGjeze)
