@@ -8,6 +8,7 @@ body {
   color: white;
   font-family: "Bree Serif", "Roboto", serif;
   font-size: 18px;
+  text-align: center;
 }
 
 .header {
@@ -22,6 +23,10 @@ body {
   text-align: center;
 }
 
+.title-row img {
+  margin: 0.3em 0;
+}
+
 .instructions-title {
   display: inline-block;
   font-size: 1.5em;
@@ -30,6 +35,11 @@ body {
 .instructions-row {
   margin: 0 auto;
   width: 400px;
+  text-align: left;
+}
+
+tr {
+  height: 3em;
 }
 
 .instructions-number {
@@ -59,12 +69,13 @@ body {
 }
 
 .start-row {
-  margin: auto;
-  width: 120px;
+  display: inline-block;
+  margin: 0 auto;
+  width: auto;
   height: auto;
   background-color: #04dd5e;
   border: 3px solid #04dd5e;
-  padding: 18px 0 18px 0;
+  padding: 18px;
   text-align: center;
   color: #010165;
   margin-bottom: 21px;

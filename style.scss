@@ -9,17 +9,24 @@ body {
   color: white;
   font-family: "Bree Serif", "Roboto", serif;
   font-size: 18px;
+  text-align: center;
 }
 
+// Banner
 .header {
   background-image: linear-gradient(#ffffb3, #00fa67 50%, #02c252 85%, #121290);
   text-align: center;
   padding: 10px;
 }
 
+// Instructions
+
 .title-row {
   margin: 42px 0 21px 0;
   text-align: center;
+  img {
+    margin: 0.3em 0;
+  }
 }
 
 .instructions-title {
@@ -30,6 +37,11 @@ body {
 .instructions-row {
   margin: 0 auto;
   width: 400px;
+  text-align: left;
+}
+
+tr {
+  height: 3em;
 }
 
 .instructions-number {
@@ -42,6 +54,7 @@ body {
   font-size: 0.8em;
 }
 
+//Doors
 .door-row {
   text-align: center;
   padding: 10px;
@@ -57,9 +70,11 @@ body {
   }
 }
 
+// Start button
 .start-row {
-  margin: auto;
-  width: 120px;
+  display: inline-block;
+  margin: 0 auto;
+  width: auto;
   height: auto;
   background-color: #04dd5e;
   border: 3px solid #04dd5e;
@@ -67,7 +82,7 @@ body {
     background-color: #00fa67;
     border: 3px solid #ffffff;
   }
-  padding: 18px 0 18px 0;
+  padding: 18px;
   text-align: center;
   color: #010165;
   margin-bottom: 21px;
