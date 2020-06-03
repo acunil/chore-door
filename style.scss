@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  // border: 1px solid red;
+}
+
+body {
+  background-color: #010165;
+  color: white;
+  font-family: "Bree Serif", "Roboto", serif;
+  font-size: 18px;
+}
+
+.header {
+  background-image: linear-gradient(#ffffb3, #00fa67 50%, #02c252 85%, #121290);
+  text-align: center;
+  padding: 10px;
+}
+
+.title-row {
+  margin: 42px 0 21px 0;
+  text-align: center;
+}
+
+.instructions-title {
+  display: inline-block;
+  font-size: 1.5em;
+}
+
+.instructions-row {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.instructions-number {
+  padding-right: 25px;
+  font-size: 1.8em;
+}
+
+.instruction-text {
+  padding: 10px;
+  font-size: 0.8em;
+}
+
+.door-row {
+  text-align: center;
+  padding: 10px;
+}
+
+.door-frame {
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+  border: 5px solid rgba(0, 0, 0, 0);
+  &:hover {
+    border: 5px solid rgba(255, 255, 255, 1);
+  }
+}
+
+.start-row {
+  margin: auto;
+  width: 120px;
+  height: auto;
+  background-color: #04dd5e;
+  border: 3px solid #04dd5e;
+  &:hover {
+    background-color: #00fa67;
+    border: 3px solid #ffffff;
+  }
+  padding: 18px 0 18px 0;
+  text-align: center;
+  color: #010165;
+  margin-bottom: 21px;
+  cursor: pointer;
+  border-radius: 8px;
+}
