@@ -6,11 +6,17 @@ var currentlyPlaying = true;
 // Constant for number of doors in the game
 const NumOfDoors = 3;
 
-// Door elements in DOM
+// DOM elements
 const doorImage1 = document.getElementById("door1");
 const doorImage2 = document.getElementById("door2");
 const doorImage3 = document.getElementById("door3");
 const startButton = document.getElementById("start");
+const currentStreak = document.getElementById("current");
+const longestStreak = document.getElementById("longest");
+
+// Variable to keep track of streaks
+var streak = 0;
+var streakLongest = 0;
 
 // Open door images
 const DoorImages = {
@@ -97,8 +103,16 @@ doorImage3.onclick = () => {
 function gameOver(status) {
   if (status) {
     startButton.innerHTML = "You win! Play again";
+    streak++;
+    currentStreak.innerHTML = streak;
   } else {
     startButton.innerHTML = "Game over. Play again?";
+    if (streak > streakLongest) {
+      streakLongest = streak;
+      longestStreak.innerHTML = streak;
+    }
+    streak = 0;
+    currentStreak.innerHTML = 0;
   }
   currentlyPlaying = false;
 }
@@ -118,7 +132,12 @@ function startRound() {
 startButton.onclick = () => {
   if (!currentlyPlaying) {
     startRound();
+    if (startButton.innerHTML === "Game over. Play again?") {
+      streak = 0;
+      currentStreak.innerHTML = streak;
+    }
   }
 };
 
+// Sets start conditions on initial load
 startRound();

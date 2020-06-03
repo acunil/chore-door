@@ -89,3 +89,20 @@ tr {
   cursor: pointer;
   border-radius: 8px;
 }
+
+// Streak
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.streak {
+  border: 3px solid white;
+  padding: 5px 15px;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+h2 {
+  font-weight: 400;
+}
