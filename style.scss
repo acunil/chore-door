@@ -1,3 +1,12 @@
+// Color variables
+$opendoor: #00ffff;
+$door: #8439f6;
+$bg: #146bbc;
+$text: #fff;
+$button: #0dff76;
+$dark: #3d6999;
+
+// global rules
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +14,8 @@
 }
 
 body {
-  background-color: #010165;
-  color: white;
+  background-color: $bg;
+  color: $text;
   font-family: "Bree Serif", "Roboto", serif;
   font-size: 18px;
   text-align: center;
@@ -14,7 +23,15 @@ body {
 
 // Banner
 .header {
-  background-image: linear-gradient(#ffffb3, #00fa67 50%, #02c252 85%, #121290);
+  background-image: linear-gradient(
+    to right,
+    $bg,
+    $bg 10%,
+    $opendoor 30%,
+    $opendoor 70%,
+    $bg 90%,
+    $bg
+  );
   text-align: center;
   padding: 10px;
 }
@@ -76,15 +93,16 @@ tr {
   margin: 0 auto;
   width: auto;
   height: auto;
-  background-color: #04dd5e;
-  border: 3px solid #04dd5e;
+  background-color: $button;
+  border: 3px outset hsla(0, 0, 0, 0.2);
   &:hover {
-    background-color: #00fa67;
-    border: 3px solid #ffffff;
+    background-color: hsl(146, 89%, 44%);
+    border: 3px outset #ffffff;
+    color: $text;
   }
   padding: 18px;
   text-align: center;
-  color: #010165;
+  color: black;
   margin-bottom: 21px;
   cursor: pointer;
   border-radius: 8px;

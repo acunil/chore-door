@@ -4,16 +4,16 @@
 }
 
 body {
-  background-color: #010165;
-  color: white;
+  background-color: #146bbc;
+  color: #fff;
   font-family: "Bree Serif", "Roboto", serif;
   font-size: 18px;
   text-align: center;
 }
 
 .header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffb3), color-stop(50%, #00fa67), color-stop(85%, #02c252), to(#121290));
-  background-image: linear-gradient(#ffffb3, #00fa67 50%, #02c252 85%, #121290);
+  background-image: -webkit-gradient(linear, left top, right top, from(#146bbc), color-stop(10%, #146bbc), color-stop(30%, #00ffff), color-stop(70%, #00ffff), color-stop(90%, #146bbc), to(#146bbc));
+  background-image: linear-gradient(to right, #146bbc, #146bbc 10%, #00ffff 30%, #00ffff 70%, #146bbc 90%, #146bbc);
   text-align: center;
   padding: 10px;
 }
@@ -73,19 +73,20 @@ tr {
   margin: 0 auto;
   width: auto;
   height: auto;
-  background-color: #04dd5e;
-  border: 3px solid #04dd5e;
+  background-color: #0dff76;
+  border: 3px outset rgba(0, 0, 0, 0.2);
   padding: 18px;
   text-align: center;
-  color: #010165;
+  color: black;
   margin-bottom: 21px;
   cursor: pointer;
   border-radius: 8px;
 }
 
 .start-row:hover {
-  background-color: #00fa67;
-  border: 3px solid #ffffff;
+  background-color: #0cd463;
+  border: 3px outset #ffffff;
+  color: #fff;
 }
 
 .flex-container {
